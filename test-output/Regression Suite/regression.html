@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>TestNG:  regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 10 21:08:00 BST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>384 seconds (384776 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Automation Tester, London, up to 7 miles, 400, 700, Per day, Contract, Contract Automation Tester jobs in London<br/>
+<a href="#Output-48522228" onClick='toggleBox("Output-48522228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48522228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48522228">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per day<br/>
+Selecting Job Type : Contract<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (0087f0afb93475d1b1537715ba5d204a)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: IT, Harrow, up to 7 miles, 400, 600, Per day, Contract, It jobs in Harrow on the Hill<br/>
+<a href="#Output-57264571" onClick='toggleBox("Output-57264571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-57264571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-57264571">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per day<br/>
+Selecting Job Type : Contract<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (4698a2ba0a84c43e63deddc3be01249c)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Tester, Harrow, up to 5 miles, 30000, 500000, Per annum, Permanent, Permanent Tester jobs in Harrow on the Hill<br/>
+<a href="#Output-944752500" onClick='toggleBox("Output-944752500", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-944752500" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-944752500">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per annum<br/>
+Selecting Job Type : Permanent<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (3f4a9bd79ff3bd28c34163957c43de09)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Tester, Watford, Hertfordshire, up to 5 miles, 40000, 60000, Per annum, Contract, Contract Tester jobs in Watford<br/>
+<a href="#Output-1698746141" onClick='toggleBox("Output-1698746141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1698746141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1698746141">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per annum<br/>
+Selecting Job Type : Contract<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (fb9a8f03cecfa2b4e6ffa80a22e7b84f)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Automation Engineer, Birmingham, Greater London, up to 5 miles, 30000, 60000, Per annum, Permanent, Permanent Accountant jobs in Birmingham<br/>
+<a href="#Output-1309956586" onClick='toggleBox("Output-1309956586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309956586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309956586">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per annum<br/>
+Selecting Job Type : Permanent<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (4ee2cf57ed0c26174de13fde446622d2)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Test Analyst, London, up to 15 miles, 40000, 50000, Per annum, Contract, Contract Test Analyst jobs in London<br/>
+<a href="#Output-1664165134" onClick='toggleBox("Output-1664165134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1664165134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1664165134">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per annum<br/>
+Selecting Job Type : Contract<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (1695b299c0fbc8fa814e6378950931e5)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet1()'><b>verifyJobSearchResultUsingDifferentDataSet1</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Manual Tester, Slough, up to 10 miles, 35000, 50000, Per annum, Permanent, Permanent Retail Manager jobs in Slough<br/>
+<a href="#Output-1295803795" onClick='toggleBox("Output-1295803795", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1295803795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1295803795">
+Accepting all cookies : Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='save']'<br/>
+Entering Job Title : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: (//input[@id='keywords'])[1]]<br/>
+Entering Location : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //input[@id='location']]<br/>
+Selecting Distance : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //select[@id='distance']]<br/>
+Clicking on More Search Options : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //button[@id='toggle-hp-search']]<br/>
+Entering Min Salary : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //input[@id='salarymin']]<br/>
+Entering Max Salary : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //input[@id='salarymax']]<br/>
+Selecting Salary Type : Per annum<br/>
+Selecting Job Type : Permanent<br/>
+Clicking on Find Job Button : [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //input[@id='hp-search-btn']]<br/>
+Verifying Test Results [[ChromeDriver: chrome on WINDOWS (55070f89926cbc1e09859fc142c0869c)] -> xpath: //h1[@class='search-header__title']]<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>uk.co.library.testsuite.JobSearchTest@1f7030a6</td></tr>
+</table><p>
+</body>
+</html>
